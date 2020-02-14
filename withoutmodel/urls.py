@@ -20,6 +20,6 @@ from testapp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^api/(?P<id>\d+)/$', views.EmployeeDetailCBV.as_view()),
-    url(r'^api/$', views.EmployeeListCBV.as_view()),
+    # url(r'^api/(?P<id>\d+)/$', views.EmployeeDetailCBV.as_view()),
+    url(r'^api/$', views.EmployeeCRUDCBV.as_view()),
 ]

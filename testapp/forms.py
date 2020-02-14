@@ -8,7 +8,7 @@ class EmployeeForm(forms.ModelForm):
         if inputsal < 5000:
             raise forms.ValidationError('The minimum salary should be Rs.5000/-')
         return inputsal
-        
+
     class Meta:
         model = Employee
         fields = '__all__'
